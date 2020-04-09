@@ -1,6 +1,6 @@
-# NgItrunner
+# NG-iTRunner
 
-原本在51CTO写了博客《Angular库与脚手架开发实战》，记录了项目创建过程，尚未公开发表即被客服删除，无语。你最喜欢哪个技术博客网站呢？
+Demo Project for Angular Library & Schematics
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
