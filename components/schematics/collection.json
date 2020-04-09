@@ -1,0 +1,9 @@
+{
+  "$schema": "../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Add NG-iTRunner",
+      "factory": "./ng-add/index"
+    }
+  }
+}

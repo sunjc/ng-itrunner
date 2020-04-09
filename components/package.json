@@ -2,6 +2,7 @@
   "name": "ng-itrunner",
   "version": "1.0.0",
   "description": "Demo Project for Angular Library",
+  "schematics": "./schematics/collection.json",
   "repository": {
     "type": "git",
     "url": "https://github.com/sunjc/ng-itrunner.git"
@@ -12,6 +13,13 @@
     "components"
   ],
   "homepage": "https://github.com/sunjc/ng-itrunner#readme",
+  "scripts": {
+    "build": "../node_modules/.bin/tsc -p tsconfig.schematics.json",
+    "copy:schemas": "cp --parents schematics/*/schema.json ../dist/ng-itrunner/",
+    "copy:files": "cp --parents -p schematics/*/files/** ../dist/ng-itrunner/",
+    "copy:collection": "cp schematics/collection.json ../dist/ng-itrunner/schematics/collection.json",
+    "postbuild": "npm run copy:schemas && npm run copy:files && npm run copy:collection"
+  },
   "peerDependencies": {
     "@angular/common": "^9.1.0",
     "@angular/core": "^9.1.0",
