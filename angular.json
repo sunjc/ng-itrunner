@@ -6,7 +6,6 @@
     "ng-itrunner": {
       "projectType": "library",
       "root": "components",
-      "sourceRoot": "components/src",
       "prefix": "ni",
       "architect": {
         "build": {
@@ -24,7 +23,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "components/src/test.ts",
+            "main": "components/test.ts",
             "tsConfig": "components/tsconfig.spec.json",
             "karmaConfig": "components/karma.conf.js"
           }
@@ -65,9 +64,15 @@
             "aot": true,
             "assets": [
               "demo/src/favicon.ico",
-              "demo/src/assets"
+              "demo/src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
+                "output": "/assets/"
+              }
             ],
             "styles": [
+              "demo/src/theme.less",
               "demo/src/styles.scss"
             ],
             "scripts": []
@@ -163,6 +168,7 @@
           }
         }
       }
-    }},
-  "defaultProject": "ng-itrunner"
+    }
+  },
+  "defaultProject": "demo"
 }
