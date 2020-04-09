@@ -16,9 +16,8 @@
       "dom"
     ],
     "paths": {
-      "ng-itrunner": [
-        "dist/ng-itrunner/ng-itrunner",
-        "dist/ng-itrunner"
+      "ng-itrunner/*": [
+        "dist/ng-itrunner/*"
       ]
     }
   },

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgItrunnerComponent } from './ng-itrunner.component';
+import { NiHelloLibComponent } from './hello-lib.component';
 
-describe('NgItrunnerComponent', () => {
-  let component: NgItrunnerComponent;
-  let fixture: ComponentFixture<NgItrunnerComponent>;
+describe('NiHelloLibComponent', () => {
+  let component: NiHelloLibComponent;
+  let fixture: ComponentFixture<NiHelloLibComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgItrunnerComponent ]
+      declarations: [ NiHelloLibComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgItrunnerComponent);
+    fixture = TestBed.createComponent(NiHelloLibComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

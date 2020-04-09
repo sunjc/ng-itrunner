@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ni-ng-itrunner',
+  selector: 'ni-hello',
   template: `
     <p>
       ng-itrunner works!
@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ],
 })
-export class NgItrunnerComponent implements OnInit {
+export class NiHelloLibComponent implements OnInit {
 
   constructor() { }
 

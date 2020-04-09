@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { NgItrunnerService } from './ng-itrunner.service';
+import { NiHelloLibService } from './hello-lib.service';
 
-describe('NgItrunnerService', () => {
-  let service: NgItrunnerService;
+describe('NiHelloLibService', () => {
+  let service: NiHelloLibService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(NgItrunnerService);
+    service = TestBed.inject(NiHelloLibService);
   });
 
   it('should be created', () => {

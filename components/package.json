@@ -1,9 +1,21 @@
 {
   "name": "ng-itrunner",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "Demo Project for Angular Library",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunjc/ng-itrunner.git"
+  },
+  "keywords": [
+    "angular",
+    "iTRunner",
+    "components"
+  ],
+  "homepage": "https://github.com/sunjc/ng-itrunner#readme",
   "peerDependencies": {
     "@angular/common": "^9.1.0",
     "@angular/core": "^9.1.0",
+    "ng-zorro-antd": "^8.5.2",
     "tslib": "^1.10.0"
   }
 }
