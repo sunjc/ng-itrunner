@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'ni-hello',
   template: `
     <p>
-      ng-itrunner works!
+      NG-iTRunner works!
     </p>
   `,
   styles: [
