@@ -1,0 +1,1 @@
+<ni-inline-login-form (login)="login($event)"></ni-inline-login-form>

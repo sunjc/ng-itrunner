@@ -1,0 +1,14 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: '<%= prefix %>-login',
+  templateUrl: './<%= dasherize(name) %>.component.html',
+  styleUrls: ['./<%= dasherize(name) %>.component.<%= style %>']
+})
+export class <%= classify(name) %>Component {
+
+  login(user: { username: string, password: string }) {
+      console.log(`{username: ${user.username}, password: ${user.password}}`);
+  }
+
+}
