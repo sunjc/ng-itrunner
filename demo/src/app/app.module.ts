@@ -8,7 +8,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {NiInlineLoginFormModule} from 'ng-itrunner/inline-login-form';
 import {NiHelloLibModule} from 'ng-itrunner/hello-lib';
-import {en_US, NgZorroAntdModule, NZ_I18N, NzFormModule} from 'ng-zorro-antd';
+import {en_US, NZ_I18N} from 'ng-zorro-antd/i18n';
 
 import en from '@angular/common/locales/en';
 
@@ -21,8 +21,6 @@ registerLocaleData(en);
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgZorroAntdModule,
-    NzFormModule,
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
