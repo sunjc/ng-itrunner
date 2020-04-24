@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "ni-ng-add",
+  "title": "NG-iTRunner ng-add schematic",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "Name of the project.",
+      "$default": {
+        "$source": "projectName"
+      }
+    },
+    "template": {
+      "type": "string",
+      "default": "blank",
+      "description": "Create an Angular project with using preset template.",
+      "x-prompt": {
+        "message": "Choose template to create project:",
+        "type": "list",
+        "items": [
+          "blank",
+          "login"
+        ]
+      }
+    }
+  },
+  "required": []
+}
