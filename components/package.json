@@ -15,7 +15,7 @@
   "scripts": {
     "build": "../node_modules/.bin/tsc -p tsconfig.schematics.json",
     "copy:schemas": "cp --parents schematics/*/schema.json schematics/*/*/schema.json ../dist/ng-itrunner/",
-    "copy:files": "cp --parents -p schematics/*/*/files/** ../dist/ng-itrunner/",
+    "copy:files": "cp --parents -r schematics/*/*/files/** ../dist/ng-itrunner/",
     "copy:collection": "cp schematics/collection.json ../dist/ng-itrunner/schematics/collection.json",
     "copy:migration": "cp schematics/migration.json ../dist/ng-itrunner/schematics/migration.json",
     "postbuild": "npm run copy:schemas && npm run copy:files && npm run copy:collection && npm run copy:migration"
