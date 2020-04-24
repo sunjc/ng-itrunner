@@ -1,9 +1,28 @@
 {
-  "$schema": "../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
     "ng-add": {
       "description": "Add NG-iTRunner",
-      "factory": "./ng-add/index"
+      "factory": "./ng-add/index",
+      "schema": "./ng-add/schema.json",
+      "hidden": true
+    },
+    "ng-add-setup-project": {
+      "description": "Sets up the specified project after the ng-add dependencies have been installed.",
+      "private": true,
+      "factory": "./ng-add/setup-project",
+      "schema": "./ng-add/schema.json"
+    },
+    "blank": {
+      "description": "Set up boot page",
+      "private": true,
+      "factory": "./ng-generate/blank/index",
+      "schema": "./ng-generate/blank/schema.json"
+    },
+    "login": {
+      "description": "Create a login component",
+      "factory": "./ng-generate/login/index",
+      "schema": "./ng-generate/login/schema.json"
     }
   }
 }
