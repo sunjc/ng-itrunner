@@ -9,6 +9,8 @@ import {AppComponent} from './app.component';
 import {NiInlineLoginFormModule} from 'ng-itrunner/inline-login-form';
 import {NiHelloLibModule} from 'ng-itrunner/hello-lib';
 import {en_US, NZ_I18N} from 'ng-zorro-antd/i18n';
+import {NzDividerModule} from 'ng-zorro-antd/divider';
+import {NzGridModule} from 'ng-zorro-antd/grid';
 
 import en from '@angular/common/locales/en';
 
@@ -24,6 +26,8 @@ registerLocaleData(en);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    NzDividerModule,
+    NzGridModule,
     NiHelloLibModule,
     NiInlineLoginFormModule,
   ],
