@@ -7,9 +7,9 @@ import {ReactiveFormsModule} from '@angular/forms';
   declarations: [NiInlineLoginFormComponent],
   imports: [
     ReactiveFormsModule,
+    NzButtonModule,
     NzFormModule,
-    NzInputModule,
-    NzButtonModule
+    NzInputModule
   ],
   exports: [NiInlineLoginFormComponent]
 })
