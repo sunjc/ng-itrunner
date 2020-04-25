@@ -6,10 +6,10 @@ import {Schema} from './schema';
 import {itRunnerImage} from '../../utils/image';
 
 const bootPageHTML = `<!-- NG-iTRunner -->
+<a href="https://github.com/sunjc/ng-itrunner" target="_blank" style="display: flex;align-items: center;justify-content: center;width: 100%;">
+  <img height="382" src="${itRunnerImage}" >
+</a>
 <div style="text-align: center">
-  <a href="https://github.com/sunjc/ng-itrunner" target="_blank" style="display: flex;align-items: center;justify-content: center;width: 100%;">
-    <img height="382" src="${itRunnerImage}" >
-  </a>
   <ni-hello></ni-hello>
 </div>`;
 
